@@ -1,100 +1,321 @@
 <!DOCTYPE html>
-<!-- Declaração do tipo de documento (HTML5) -->
 <html lang="pt-BR">
-<!-- Tag raiz do documento, com atributo de idioma (português do Brasil) -->
-
 <head>
-  <!-- Cabeçalho do documento (metadados e links) -->
-  <meta charset="UTF-8">
-  <!-- Define a codificação de caracteres como UTF-8 (suporta acentos e caracteres especiais) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Configura a viewport para responsividade em dispositivos móveis -->
-  <title>Currículo Acadêmico - Rafael Assis Santos</title>
-  <!-- Título que aparece na aba do navegador -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Link para o arquivo CSS externo (estilos) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Braga - Barbeiro Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Ícones Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-  <!-- Corpo do documento (conteúdo visível) -->
+    <!-- HEADER COM MENU -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Frank <span>Braga</span></h1>
+                <p class="sub-logo">Barber Shop</p>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Frank Braga de Oliveira</h1>
+            <p class="hero-subtitle">Barbeiro Profissional | Especialista em Cortes Masculinos</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary">Agende seu Horário</a>
+                <a href="#galeria" class="btn btn-secondary">Ver Trabalhos</a>
+            </div>
+            <div class="hero-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>São Paulo - SP</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(11) 99999-9999</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Ter - Sáb: 9h às 20h</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <header>
-  <div class="header-content">
-    <img src="ras.png"
- alt="Foto de perfil" class="profile-img">
-    <div class="header-text">
-       <!-- Cabeçalho da página -->
-      <h1>Rafael Assis Santos</h1>
-        <!-- Título principal (nome) -->
-      <p>Professor de: Programação👨‍💻 História⏳ Pedagogia🦉 Técnico de Informática💻 Teologia 📖</p>
-       <!-- Subtítulo (cargo) -->
-    </div>
-  </div>
-   
-  <button id="modo-escuro">Alternar Modo Escuro</button>
-     <!-- Botão para alternar tema escuro/claro (funcionalidade no JavaScript) -->
-  <button id="imprimir">Imprimir currículo</button>
-    <!-- Botão para imprimir o currículo -->
-</header>
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>Frank</span></h2>
+            <div class="sobre-content">
+                <div class="sobre-imagem">
+                    <div class="img-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                        <p>Sua Foto</p>
+                    </div>
+                </div>
+                <div class="sobre-texto">
+                    <h3>Olá, sou Frank Braga!</h3>
+                    <p>Barbeiro profissional há 8 anos, especializado em cortes modernos, degradês, barba e styling masculino. Minha paixão é transformar visual e elevar a autoestima dos meus clientes através de um trabalho de qualidade e atendimento personalizado.</p>
+                    <p><strong>Experiência:</strong> 8 anos</p>
+                    <p><strong>Especialidades:</strong> Degradê Americano, Social, Navalhado, Barba e Pigmentação</p>
+                    <p><strong>Cursos:</strong> Barber University (2020), Master Class Degradê (2022)</p>
+                    <div class="sobre-stats">
+                        <div class="stat">
+                            <span class="stat-num">500+</span>
+                            <span class="stat-text">Clientes</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">8</span>
+                            <span class="stat-text">Anos Exp.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">50+</span>
+                            <span class="stat-text">Cortes/mês</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="perfil">
-    <!-- Seção de perfil -->
-    <h2>Perfil</h2>
-    <!-- Título da seção -->
-    <p>Professor que ama o que faz</p>
-    <!-- Texto descritivo -->
-  </section>
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="section-title">Meus <span>Serviços</span></h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Corte Masculino</h3>
+                    <p>Corte social, moderno, degradê, tesoura ou máquina. Finalização com produtos de qualidade.</p>
+                    <div class="servico-preco">R$ 45</div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-razor"></i>
+                    </div>
+                    <h3>Barba</h3>
+                    <p>Barba completa com toalha quente, navalha, hidratação e acabamento perfeito.</p>
+                    <div class="servico-preco">R$ 35</div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Corte Infantil</h3>
+                    <p>Corte para crianças com paciência e cuidado. Ambiente lúdico e descontraído.</p>
+                    <div class="servico-preco">R$ 35</div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Degradê</h3>
+                    <p>Degradê americano, low fade, mid fade, high fade. Técnica apurada e precisão.</p>
+                    <div class="servico-preco">R$ 50</div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Pigmentação</h3>
+                    <p>Disfarce para cabelos brancos ou falhas na barba. Acabamento natural.</p>
+                    <div class="servico-preco">R$ 40</div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Combo</h3>
+                    <p>Corte + Barba + Hidratação. Pacote completo para você sair renovado.</p>
+                    <div class="servico-preco">R$ 75</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="habilidades">
-    <!-- Seção de habilidades -->
-    <h2>Habilidades</h2>
-    <ul>
-      <!-- Lista não ordenada -->
-      <li>Programação Front-end e Back-end</li>
-      <!-- Item da lista -->
-      <li>Informática</li>
-      <li>Banco de Dados</li>
-      <li>Git e GitHub</li>
-      <li>Metodologias Ativas de Ensino</li>
-    </ul>
-  </section>
+    <!-- GALERIA -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2 class="section-title">Meus <span>Trabalhos</span></h2>
+            <div class="galeria-filtros">
+                <button class="filtro-btn active" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="corte">Cortes</button>
+                <button class="filtro-btn" data-filtro="barba">Barba</button>
+                <button class="filtro-btn" data-filtro="degrade">Degradês</button>
+            </div>
+            <div class="galeria-grid" id="galeria-container">
+                <!-- As imagens serão carregadas via JavaScript -->
+            </div>
+        </div>
+    </section>
 
-  <section class="formacao">
-    <!-- Seção de formação acadêmica -->
-    <h2>Formação Acadêmica</h2>
-    <p>História</p>
-    <p>Pedagogia</p>
-     <p>Análise e Desenvolvimento de Sistemas</p>
-    <!-- Parágrafo com informação -->
-    <p>Pós-graduações</p>
-    <p>Metodologias do Ensino da Matemática, Educação do Campo, Educação Especial, Teologia</p>
-  </section>
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <h2 class="section-title">O que <span>dizem</span></h2>
+            <div class="depoimentos-slider">
+                <div class="depoimento-card">
+                    <div class="cliente-info">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <h4>Carlos Silva</h4>
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Melhor barbeiro da região! Frank é extremamente cuidadoso e sempre faz um trabalho impecável. Recomendo demais!"</p>
+                </div>
+                <div class="depoimento-card">
+                    <div class="cliente-info">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <h4>Rafael Oliveira</h4>
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Atendimento top e ambiente muito agradável. Saio sempre satisfeito. Frank entende do assunto e dá ótimas dicas!"</p>
+                </div>
+                <div class="depoimento-card">
+                    <div class="cliente-info">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <h4>Pedro Santos</h4>
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Profissional muito talentoso! Meu degradê ficou perfeito. Com certeza virei cliente fiel!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="experiencia">
-    <!-- Seção de experiência profissional -->
-    <h2>Experiência Profissional</h2>
-    <ul>
-      <li>Professor de Programação - Desde 2022</li>
-      <li>Técnico de Informática - Desde 2018</li>
-      <li> Professor de História - Desde 20214</li>
-    </ul>
-  </section>
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em <span>Contato</span></h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Agende seu horário</h3>
+                    <div class="info-block">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone / WhatsApp</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@frankbraga.barber</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua das Barbearias, 123 - Vila Maria<br>São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Terça a Sábado: 9h às 20h<br>Domingo e Segunda: Fechado</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="form-contato" class="contato-form">
+                    <h3>Envie uma mensagem</h3>
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Seu WhatsApp" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione o serviço</option>
+                            <option value="corte">Corte Masculino</option>
+                            <option value="barba">Barba</option>
+                            <option value="degrade">Degradê</option>
+                            <option value="combo">Combo Corte + Barba</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem ou data desejada" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Solicitar Horário</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <section class="contato">
-    <!-- Seção de contato -->
-    <h2>Contato</h2>
-    <p>Email: rafael.assis.santos@escola.pr.gov.br</p>
-    <p>GitHub: github.com/professor-rafael</p>
-  </section>
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Frank <span>Braga</span></h2>
+                    <p>Barbeiro Profissional</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Frank Braga de Oliveira - Todos os direitos reservados</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> por um dev iniciante</p>
+            </div>
+        </div>
+    </footer>
 
-  <footer>
-    <!-- Rodapé da página -->
-    <p>&copy; 2025 Todos os direitos reservados à RasinformaticA</p>
-    <!-- Texto de copyright e observação. &copy; → © (copyright) -->
-  </footer>
-
-  <script src="script.js"></script>
-  <!-- Link para o arquivo JavaScript externo (funcionalidades) -->
+    <script src="script.js"></script>
 </body>
 </html>
